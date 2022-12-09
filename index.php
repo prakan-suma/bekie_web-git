@@ -17,6 +17,7 @@
 	<?= alert() ?>
 
 	<h2>สินค้าขายดี</h2>
+	
 	<div class="row best_product">
 		<?php
 		$sql = "SELECT p.* , COUNT(product_id) as cnt
