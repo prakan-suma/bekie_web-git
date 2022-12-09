@@ -1,6 +1,7 @@
 <?php
-require_once "db.php";
+include_once "db.php";
 $user_type = $_SESSION['user_type'] ?? "";
+
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +13,7 @@ $user_type = $_SESSION['user_type'] ?? "";
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bekie</title>
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/main.css">
     <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
@@ -20,5 +21,5 @@ $user_type = $_SESSION['user_type'] ?? "";
 
 <body>
     <?php
-    include "menu.php";
+    include_once "menu.php";
     ?>

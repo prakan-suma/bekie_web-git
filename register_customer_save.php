@@ -5,7 +5,7 @@ require_once "db.php";
 
 //เตรียมคำสั่ง SQL
 $sql = "insert into customer values (null,'{$_POST['username']}','{$_POST['password']}','{$_POST['first_name']}','{$_POST['last_name']}',
-'{$_POST['phone']}','{$_POST['email']}','customer');";
+'{$_POST['phone']}','{$_POST['email']}');";
 
 // ประมวลผลคำสั่ง SQL และตรวจสอบการทำงาน
 if (save($sql)) {

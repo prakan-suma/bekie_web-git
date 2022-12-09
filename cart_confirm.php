@@ -1,6 +1,6 @@
 <?php
-session_start();
 include "db.php";
+
 $user_type = $_SESSION['user_type'] ?? "" ;
 
 if( empty($_SESSION['login']) || $user_type == "seller" ){
@@ -31,7 +31,7 @@ $sql = "insert into purchase values(
 				'$net_price'
 		    )";
 $saved = save($sql);
-$purchase_id = mysqli_insert_id($link);
+$purchase_id = mysqli_insert_id($conn);
 
 foreach($cart as $c){
 	$id = $c['id'] ;

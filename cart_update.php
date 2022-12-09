@@ -1,5 +1,4 @@
 <?php
-session_start();
 include "db.php";
 $user_type = $_SESSION['user_type'] ?? "" ;
 

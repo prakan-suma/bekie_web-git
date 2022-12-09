@@ -1,7 +1,6 @@
 <?php include 'header.php' ?>
 
 <!-- body code goes here -->
-
 <section class="container">
 	<form action="search.php" method="post" class="mt-4 mb-4">
 		<div class="input-group">
@@ -67,7 +66,6 @@
 		$page = (empty($_GET['page'])) ? 1 : $_GET['page'];
 		$start = $perpage * $page - $perpage; // (1*15)-20 = 0 , (2*15)-20 = 15 ;
 
-
 		$sql = "select * from product ";
 		if (!empty($best_ids)) {
 			$best_ids = implode(',', $best_ids);
@@ -75,6 +73,7 @@
 		}
 
 		$all = get($sql);
+        
 
 		$pages = ceil(count($all) / $perpage);
 

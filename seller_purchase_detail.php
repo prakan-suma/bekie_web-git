@@ -27,7 +27,7 @@ $sql = "select *
 $cart = get($sql);
 
 
-//echo mysqli_error($link);
+//echo mysqli_error($conn);
 ?>
 <!DOCTYPE html>
 <html lang="en">
