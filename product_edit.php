@@ -4,7 +4,7 @@
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <div class="container">
-	<h1>ร้าน <?= user('shop_name') ?></h1>
+	<h4>ร้าน <?= user('shop_name') ?></h4>
 	<h2> เพิ่มสินค้าใหม่ </h2>
 
 	<!-- show alert  -->

@@ -4,23 +4,30 @@
 <session class="login">
 	<div class="ct-rg">
 
-		<h1 class="text-center"> เข้าสู่ระบบ</h1>
+		<h4 class="text-center tx-b font-weight-bold">บัญชีของคุณสำหรับทุกอย่างเกี่ยวกับ BEKIE</h4>
 
 		<?= alert() ?>
 
 		<form action="login_check.php" method="post">
-			<div class="form-group">
-				<label for="username" class="col-sm-2 col-form-label"> ชื่อผู้ใช้งาน </label>
-				<input name="username" type="text" required="required" class="form-control ">
+			<div>
+				<input name="username" type="text" required="required" placeholder="ชื่อผู้ใช้งาน">
 			</div>
 
-			<div class="form-group ">
-				<label for="password" class="col-sm-2 col-form-label"> รหัสผ่าน </label>
-				<input type="password" required="required" name="password" class="form-control ">
+			<div>
+				<input type="password" required="required" name="password" placeholder="รหัสผ่าน">
 			</div>
-			<div class="form-group ">
-				<button type="submit" name="btn_save" class="btn btn-primary btn-block  ">บันทึก</button>
+
+			<div class="mb-3"><a class="li-inf text-right" href=""> ลืมรหัสผ่านใช่ใหม</a> </div>
+
+			<div>
+				<p class="text-center font-weight-light">ในการสร้างบัญชี หมายความว่าคุณยอมรับ <a class="li-inf" href=""> นโยบายความเป็นส่วนตัว</a> และ <a class="li-inf" href="">ข้อกำหนดการใช้</a> ของ Bekie</p>
 			</div>
+
+			<div class=" ">
+				<button type="submit" name="btn_save">บันทึก</button>
+			</div>
+
+
 		</form>
 	</div>
 </session>

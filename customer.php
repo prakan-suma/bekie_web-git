@@ -4,7 +4,7 @@
 
 	<div class="ct-rg">
 
-		<h1 class="text-center ">สมัครผู้ซื้อ</h1>
+		<h4 class="text-center ">สมัครผู้ซื้อ</h4>
 
 		<!-- alert-messege -->
 		<?= alert() ?>

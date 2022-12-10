@@ -24,7 +24,7 @@ if(!isset($_SESSION['login'])){
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 	<div class="container">
-	  <h1>แก้ไขข้อมูลร้านค้า</h1>
+	  <h4>แก้ไขข้อมูลร้านค้า</h4>
 		
 		<?php
 	 if(isset($_SESSION['alert-message'])){ 

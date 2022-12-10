@@ -1,12 +1,6 @@
 <?php
-session_start();
-$user_type = $_SESSION['user_type'] ?? "" ;
 
-if( empty($_SESSION['login']) || $user_type == "customer" ){
-	header('location:login.php');
-}
-
-include "db.php";
+include 'header.php';
 
 $sql = "select l.purchase_id
 	 	from purchase_list l 
@@ -30,25 +24,10 @@ $purchase = get($sql);
 
 
 ?>
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Untitled Document</title>
-    <!-- Bootstrap -->
-	<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
-	
-  </head>
-  <body>
-<?php
-	  include "menu.php";  
-?>
 <!-- body code goes here -->
 	  
-	 <div class="container">
-		 <h1>รายการใบสั่งซื้อ </h1>
+	 <div class="ct">
+		 <h4>รายการใบสั่งซื้อ </h4>
 		  
 			 <div class="row table-responsive">
 				<table class="table table-bordered table-hover">

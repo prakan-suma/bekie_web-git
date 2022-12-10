@@ -1,47 +1,52 @@
 <?php include 'header.php' ?>
 
-<div class="container ct-rg">
-	<h1 class="text-center">สมัครผู้ซื้อ</h1>
+<div class="ct-rg">
 
+
+	<h3 class="text-center tx-b font-weight-bold">สมัครเป็น BEKIE MEMBER</h3>
+
+	<p class="text-center font-weight-light">สร้างโปรไฟล์ Bekie Seller Member และ ได้สิทธิ์ในการลงขายสินค้ากับทาง Bekie</p>
 	<!-- alert-messege -->
 	<?= alert() ?>
 
-	<form action="register_customer_save.php" method="post" >
-		<div class="form-group ">
-			<label for="username" class="col-sm-2 col-form-label"> ชื่อผู้ใช้งาน<span class="text-danger">*</span> </label>
-			<input name="username" type="text" required class="form-control ">
+	<div>
+		<p class="text-center font-weight-light">ฉันต้องการลงขาย <a class="li-inf" href="register_seller.php">สมัคเป็น Seller Member</a></p>
+	</div>
+	<form action="register_customer_save.php" method="post">
+		<div>
+			<input name="username" type="text" required placeholder="ชื่อผู้ใช้">
 		</div>
 
-		<div class="form-group ">
-			<label for="password" class="col-sm-2 col-form-label"> รหัสผ่าน<span class="text-danger">*</span> </label>
-			<input type="password" required name="password" class="form-control ">
+		<div <input type="password" required name="password" placeholder="รหัสผ่าน">
 		</div>
 
-		<div class="form-group ">
-			<label for="first_name" class="col-sm-2 col-form-label"> ชื่อจริง <span class="text-danger">*</span> </label>
-			<input type="text" required name="first_name" class="form-control ">
+		<div>
+			<input type="text" required name="first_name" placeholder="ชื่อจริง">
 		</div>
 
-		<div class="form-group ">
-			<label for="last_name" class="col-sm-2 col-form-label"> นามสกุล <span class="text-danger">*</span> </label>
-			<input type="text" required name="last_name" class="form-control ">
+		<div <input type="text" required name="last_name" placeholder="นามสกุล">
 		</div>
 
-		<div class="form-group ">
-			<label for="phone" class="col-sm-2 col-form-label"> เบอร์โทร<span class="text-danger">*</span> </label>
-			<input type="text" name="phone" class="form-control ">
+		<div>
+			<input type="text" name="phone" placeholder="เบอร์โทร">
+		</div>
+
+		<div>
+			<input type="text" required name="email" id="email" placeholder="อี.เมล">
+		</div>
+
+		<p class="text-center font-weight-light">ในการสร้างบัญชี หมายความว่าคุณยอมรับ <a class="li-inf" href=""> นโยบายความเป็นส่วนตัว</a> และ <a class="li-inf" href="">ข้อกำหนดการใช้</a> ของ Bekie</p>
+
+		<button type="submit" name="btn_save">เข้าร่วมกับเรา</button>
+
+		<div>
+			<p class="text-center font-weight-light">เป็นสมาชิกแล้วใช่ไหม <a class="li-inf" href="login.php">ลงชื่อเข้าใช้</a></p>
 		</div>
 
 
-		<div class="form-group ">
-			<label for="email" class="col-sm-2 col-form-label"> อี.เมล <span class="text-danger">*</span></label>
-			<input type="text" required name="email" class="form-control " id="email">
-		</div>
-
-		<button type="submit" name="btn_save" class="btn btn-primary btn-block ">บันทึก</button>
 	</form>
-
-
-	<?php
-	include 'footer.php';
-	?>
+</div>
+</div>
+<?php
+include 'footer.php';
+?>

@@ -1,18 +1,18 @@
 <?php include 'header.php' ?>
 
 <!-- body code goes here -->
-<div class="container">
-	<h1>ร้าน <?= user('shop_name') ?></h1>
-	<h2 class="col-sm-3"> รายชื่อสินค้า </h2>
+<div class="ct">
+	<h2>ร้าน <?= user('shop_name') ?></h2>
+	<h4> รายชื่อสินค้า </h4>
 
 	<?= alert() ?>
 
 	<form action="product_delete.php" method="post">
-		<div class="mb-4">
-			<button class="col-sm-1 btn btn-danger"> ลบ </button>
-			
-			<a href="product_add.php" class=" col-sm-1 offset-sm-9 btn btn-success"> เพิ่ม </a>
+		<div class="mb-2">
+			<button class="btn text-danger"> ลบ </button>
+			<a href="product_add.php" class="btn "> เพิ่มสินค้า <ion-icon name="add-outline"></ion-icon> </a>
 		</div>
+
 		<div class="table-responsive">
 			<table class="table table-bordered table-striped table-hover">
 				<thead>
@@ -45,7 +45,7 @@
 							<td> <?= $p['detail'] ?> </td>
 							<td> <?= $p['box_width'] ?> x <?= $p['box_height'] ?> x<?= $p['box_long'] ?> </td>
 							<td> <?= $p['box_weight'] ?> </td>
-							<td> <a href="product_edit.php?id=<?= $p['id'] ?>" class=" btn btn-warning"> แก้ไข </a> </td>
+							<td> <a href="product_edit.php?id=<?= $p['id'] ?>" class=" btn text-warning"> แก้ไข </a> </td>
 						</tr>
 					<?php
 					}

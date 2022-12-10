@@ -47,7 +47,7 @@ $cart = get($sql);
 <!-- body code goes here -->
 	  
 	 <div class="container">
-		 <h1> ใบสั่งซื้อ </h1>
+		 <h4> ใบสั่งซื้อ </h4>
 		 <div class="row">
 		 	<div class="col-md-2 offset-md-7"> เลขที่ใบสั่งซื้อ  </div>
 			<div class="col-md-2"><?=$purchase['id']?></div>

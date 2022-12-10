@@ -1,8 +1,8 @@
 <?php include 'header.php' ?>
 
 <!-- body code goes here -->
-<div class="container">
-	<h1>ร้าน <?= user('shop_name') ?></h1>
+<div class="ct">
+	<h4>ร้าน <?= user('shop_name') ?></h4>
 
 	<!-- alert   -->
 	<div class="row">

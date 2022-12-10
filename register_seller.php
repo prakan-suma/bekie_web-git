@@ -1,56 +1,53 @@
 <?php include 'header.php' ?>
 
 <!-- //content  -->
-<div class="container mt-5">
-	
-	<div class="ct-rg">
-	<h1 class="text-center">สมัครผู้ขาย</h1>
+<div class="ct-rg">
 
+	<h3 class="text-center tx-b font-weight-bold">สมัครผู้ขาย</h3>
+
+	<p class="text-center font-weight-light">สร้างโปรไฟล์ Nike Member และได้สิทธิ์ก่อนใครในการเข้าถึงที่สุดของที่สุดแห่ง Nike ทั้งสินค้า แรงบันดาลใจ และกลุ่มชุมชน</p>
 	<!-- alert-messege -->
 	<?= alert() ?>
 
-		<form action="register_seller_save.php" method="post" class="form">
-			<div class="form-group  ">
-				<label for="username" class="col-sm-2 col-form-label"> ชื่อผู้ใช้งาน<span class="text-danger">*</span> </label>
-				<input name="username" type="text" required="required" class="form-control ">
-			</div>
+	<form action="register_seller_save.php" method="post" class="form">
+		<div>
+			<input name="username" type="text" required="required" placeholder="ชื่อผู้ใช้งาน">
+		</div>
 
-			<div class="form-group ">
-				<label for="password" class="col-sm-2 col-form-label"> รหัสผ่าน<span class="text-danger">*</span> </label>
-				<input type="password" required="required" name="password" class="form-control ">
-			</div>
+		<div>
+			<input type="password" required="required" name="password" placeholder="รหัสผ่าน">
+		</div>
 
-			<div class="form-group ">
-				<label for="shop_name" class="col-sm-2 col-form-label"> ชื่อร้าน<span class="text-danger">*</span> </label>
-				<input type="text" required="required" name="shop_name" class="form-control ">
-			</div>
+		<div>
+			<input type="text" required="required" name="shop_name" placeholder="ชื่อร้าน">
+		</div>
 
-			<div class="form-group ">
-				<label for="address" class="col-sm-2 col-form-label"> ที่อยู่<span class="text-danger">*</span> </label>
-				<textarea required="required" class="form-control " name="address"></textarea>
-			</div>
+		<div>
+			<textarea required="required" name="address" placeholder="ที่อยู่"></textarea>
+		</div>
 
-			<div class="form-group ">
-				<label for="phone" class="col-sm-2 col-form-label"> เบอร์โทรติดต่อ<span class="text-danger">*</span> </label>
-				<input type="text" name="phone" class="form-control ">
-			</div>
+		<div>
+			<input type="text" name="phone" placeholder="เบอร์โทรติดต่อ">
+		</div>
 
-			<div class="form-group ">
-				<label for="contace_name" class="col-sm-2 col-form-label"> ชื่อผู้ติดต่อ <span class="text-danger">*</span> </label>
-				<input type="text" required="required" name="contace_name" class="form-control ">
-			</div>
-			<div class="form-group ">
-				<label for="email" class="col-sm-2 col-form-label"> อี.เมล <span class="text-danger">*</span></label>
-				<input type="text" required="required" name="email" class="form-control" id="email">
-			</div>
+		<div>
+			<input type="text" required="required" name="contace_name" " placeholder=" ชื่อผู้ติดต่อ">
+		</div>
+		<div>
 
-			<div class="form-group ">
-				<label for="website" class="col-sm-2 col-form-label"> เว็บไซต์ </label>
-				<input type="text" name="website" class="form-control ">
-			</div>
-			<button type="submit" name="btn_save" class="btn btn-primary  btn-block">บันทึก</button>
-		</form>
-	</div>
+			<input type="text" required="required" name="email" id="email" placeholder="อี.เมล">
+		</div>
+
+		<div>
+			<input type="text" name="website" placeholder="เว็บไซต์">
+		</div>
+		<p class="text-center font-weight-light">ในการสร้างบัญชี หมายความว่าคุณยอมรับ <a class="li-inf" href=""> นโยบายความเป็นส่วนตัว</a> และ <a class="li-inf" href="">ข้อกำหนดการใช้</a> ของ Bekie</p>
+		<button type="submit" name="btn_save">บันทึก</button>
+
+		<div>
+			<p class="text-center font-weight-light">เป็นสมาชิกแล้วใช่ไหม <a class="li-inf" href="login.php">ลงชื่อเข้าใช้</a></p>
+		</div>
+	</form>
 
 </div>
 

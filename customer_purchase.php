@@ -34,7 +34,7 @@ $purchase = get($sql);
 <!-- body code goes here -->
 	  
 	 <div class="container">
-		 <h1>รายการใบสั่งซื้อ </h1>
+		 <h4>รายการใบสั่งซื้อ </h4>
 		  
 			 <div class="row table-responsive">
 				<table class="table table-bordered table-hover">
