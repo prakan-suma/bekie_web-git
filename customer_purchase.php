@@ -1,12 +1,9 @@
 <?php
-session_start();
-$user_type = $_SESSION['user_type'] ?? "" ;
+include_once "header.php";
 
 if( empty($_SESSION['login']) || $user_type == "seller" ){
 	header('location:login.php');
 }
-
-include "db.php";
 
 $sql = "select p.* , c.first_name , c.last_name 
 		from purchase p
@@ -14,28 +11,11 @@ $sql = "select p.* , c.first_name , c.last_name
 		where c.id = ".$_SESSION['user']['id'];
 $purchase = get($sql);
  
+?>
 
-?>
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Untitled Document</title>
-    <!-- Bootstrap -->
-	<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
-	
-  </head>
-  <body>
-<?php
-	  include "menu.php";  
-?>
 <!-- body code goes here -->
-	  
-	 <div class="container">
+	 <div class="ct">
 		 <h4>รายการใบสั่งซื้อ </h4>
-		  
 			 <div class="row table-responsive">
 				<table class="table table-bordered table-hover">
 					<tr>
@@ -64,11 +44,6 @@ $purchase = get($sql);
 		 
 	 </div>
 	  
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-	<script src="js/jquery-3.3.1.min.js"></script>
-
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="js/popper.min.js"></script> 
-	<script src="js/bootstrap-4.3.1.js"></script>
-  </body>
-</html>
+<?php
+	include 'footer.php';
+?>

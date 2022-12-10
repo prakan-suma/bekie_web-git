@@ -1,12 +1,9 @@
 <?php
-session_start();
-$user_type = $_SESSION['user_type'] ?? "" ;
+include 'header.php';
 
 if( empty($_SESSION['login']) || $user_type == "seller" ){
 	header('location:login.php');
 }
-
-include "db.php";
 
 if(empty($_GET['id']))
 	header('location:index.php');
@@ -24,28 +21,16 @@ $sql = "select *
         from purchase_list l
 		inner join product p on p.id = l.product_id
 	    where purchase_id = ".$id;
+
 $cart = get($sql);
 
 //echo mysqli_error($conn);
 ?>
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Untitled Document</title>
-    <!-- Bootstrap -->
-	<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
-	
-  </head>
-  <body>
-  <?php
-	  include "menu.php";  
-?>
+
 <!-- body code goes here -->
 	  
-	 <div class="container">
+	 <div class="ct">
+		
 		 <h4> ใบสั่งซื้อ </h4>
 		 <div class="row">
 		 	<div class="col-md-2 offset-md-7"> เลขที่ใบสั่งซื้อ  </div>

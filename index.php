@@ -13,7 +13,7 @@
 	<div class="best_product">
 
 		<?php
-		
+
 		// ดึงข้อมูลจากตาราง product ทั้งหมด , นับ(product_id) ใส่ Column ใหม่ ชื่อ cnt 
 		// ตาราง purchase_list ชื่อใหม่ว่า l 
 		// ต่อตาราง product ชื่อใหม่ว่า p โดย p.id = l.product_id
@@ -133,7 +133,7 @@
 		<?php
 		for ($i = 1; $i <= $pages; $i++) {
 		?>
-			<li class="page-item"> <a class="btn-ac-link" href="index.php?page=<?= $i ?>"> <?= $i ?> </a> </li>
+			<li class="page-item ml-1 mr-1"> <a class="btn-ac-link" href="index.php?page=<?= $i ?>"> <?= $i ?> </a> </li>
 		<?php
 		}
 		?>

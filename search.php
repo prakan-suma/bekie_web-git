@@ -5,6 +5,7 @@
 
 <section class="ct">
 	<h4>รายการสินค้าที่ตรงกับคำค้นหา </h4>
+
 	<div class="product_list">
 		<?php
 		$perpage = 20;
@@ -13,7 +14,6 @@
 
 		$keyword = $_POST['keyword'];
 		$sql = "select * from product where name LIKE '%$keyword%' ";
-
 
 		$all = get($sql);
 

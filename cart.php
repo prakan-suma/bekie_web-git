@@ -17,7 +17,7 @@ $cart = $_SESSION['cart'] ?? [];
 
 <!-- body code goes here -->
 
-<div class="container">
+<div class="ct">
 	<h4>หน้าตะกร้าสินค้า </h4>
 	<form action="cart_update.php" method="post">
 		<div class="row table-responsive">

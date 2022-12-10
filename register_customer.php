@@ -12,12 +12,14 @@
 	<div>
 		<p class="text-center font-weight-light">ฉันต้องการลงขาย <a class="li-inf" href="register_seller.php">สมัคเป็น Seller Member</a></p>
 	</div>
+
 	<form action="register_customer_save.php" method="post">
 		<div>
 			<input name="username" type="text" required placeholder="ชื่อผู้ใช้">
 		</div>
 
-		<div <input type="password" required name="password" placeholder="รหัสผ่าน">
+		<div>
+			<input type="password" required name="password" placeholder="รหัสผ่าน">
 		</div>
 
 		<div>
@@ -40,7 +42,9 @@
 		<button type="submit" name="btn_save">เข้าร่วมกับเรา</button>
 
 		<div>
-			<p class="text-center font-weight-light">เป็นสมาชิกแล้วใช่ไหม <a class="li-inf" href="login.php">ลงชื่อเข้าใช้</a></p>
+			<p class="text-center font-weight-light">เป็นสมาชิกแล้วใช่ไหม 
+				<a class="li-inf" href="login.php">ลงชื่อเข้าใช้</a>
+			</p>
 		</div>
 
 
