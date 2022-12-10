@@ -13,6 +13,7 @@
 	<div class="best_product">
 
 		<?php
+		
 		// ดึงข้อมูลจากตาราง product ทั้งหมด , นับ(product_id) ใส่ Column ใหม่ ชื่อ cnt 
 		// ตาราง purchase_list ชื่อใหม่ว่า l 
 		// ต่อตาราง product ชื่อใหม่ว่า p โดย p.id = l.product_id
