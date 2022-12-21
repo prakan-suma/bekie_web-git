@@ -27,7 +27,7 @@
 		</div>
 
 		<div class="row">
-			<div class="col-sm-4 offset-sm-2"> <a href="shop_edit.php" class="btn "> แก้ไข </a> </div>
+			<div class="col-sm-4 offset-sm-2"> <a href="customer_edit.php" class="btn "> แก้ไข </a> </div>
 		</div>
 	</div>
 </div>
