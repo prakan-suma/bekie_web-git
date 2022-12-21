@@ -1,8 +1,5 @@
 <?php include 'header.php' ?>
-
-
 <div class="ct-rg">
-
 	<!-- alert-messege -->
 	<?= alert() ?>
 	<div class="ct">
@@ -33,11 +30,7 @@
 			<div class="col-sm-4 offset-sm-2"> <a href="shop_edit.php" class="btn "> แก้ไข </a> </div>
 		</div>
 	</div>
-
-
 </div>
-
-
 <?php
 include 'footer.php';
 ?>
