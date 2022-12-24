@@ -13,10 +13,11 @@ function get($sql)
 {
 	global $conn;
 	try {
-		$query = $conn->query($sql);
-		$queryRow = $query->fetch_all(MYSQLI_ASSOC);
+		$stmt = $conn->prepare($sql);
+		$stmt->execute();
+		$queryRel = $stmt->fetch_all(MYSQLI_ASSOC);
 	} catch (Exception $e) {
-		$queryRow = [];
+		$queryRel = [];
 	}
 	return $queryRow;
 }
