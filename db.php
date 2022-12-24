@@ -25,11 +25,11 @@ function save($sql)
 {
 	global $conn;
 	try {
-		$rel = $conn->query($sql);
+		$stmt = $conn->prepare($sl);
+		$stmt->execute();
 	} catch (Exception $e) {
 		echo $e->getMessage();
 	}
-	return $rel;
 }
 
 function alert()
