@@ -2,11 +2,9 @@
 include "db.php";
 $user_type = $_SESSION['user_type'] ?? "" ;
 
-if( empty($_SESSION['login']) || $user_type == "seller" ){
-	header('location:login.php');
-}
 
-if(empty($_GET['id'])){
+if(empty($_GET['id']))
+{
 	header('location:index.php');
 }
 
