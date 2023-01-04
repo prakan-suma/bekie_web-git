@@ -46,9 +46,17 @@ function alert()
 // function แสดงข้อมูลลูกค้า 
 function user($userdata)
 {
-	
 	// return ถ้ามีข้อมูลให้แสดงออกไป ถ้าไม่มี ให้แสดงคำว่า "ไม่มีข้อมูลอยู่!" 
 	return $_SESSION['user'][$userdata] ?? "ไม่มีข้อมูลอยู่!";
 }
 
+function authSell(){
+	if(empty($_SESSION['login']) || $user_type == "seller" )
+	header('location:login.php');
+}
+
+function authCus(){
+	if(empty($_SESSION['login']) || $user_type == "custommer" )
+	header('location:login.php');
+}
 ?>
